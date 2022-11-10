@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "AddEmployee";
+}
+
+<h2>AddEmployee</h2>
+@if (TempData["msg"] != null)
+{
+    <div class="alert alert-info">@TempData["msg"]</div>
+}
+<div class="container">
+    <form action="/Item/AddEmployee" method="post">
+        <label>RestaurantName</label>
+        <select class="form-control" name="RestaurantName">
+            @foreach (var c in ViewBag.session_item)
+            {
+                <option value="@c.RestaurantName">@c.RestaurantName</option>
+            }
+        </select>
+        <label>RestaurantId</label>
+        <select class="form-control" name="RestaurantId">
+            @foreach (var c in ViewBag.session_item)
+            {
+                <option value="@c.RestaurantId">@c.RestaurantId</option>
+            }
+        </select>
+        <label>Location</label>
+        <select class="form-control" name="Location">
+            @foreach (var c in ViewBag.session_item)
+            {
+                <option value="@c.Location">@c.Location</option>
+            }
+        </select>
+        <label>EmployeeId</label>
+        <select class="form-control" name="EmployeeId">
+            @foreach (var c in ViewBag.allemployee)
+            {
+                <option value="@c.Id">@c.Id</option>
+            }
+        </select>
+        <label>EmployeeName</label>
+        <select class="form-control" name="EmployeeName">
+            @foreach (var c in ViewBag.allemployee)
+            {
+                <option value="@c.EmployeeName">@c.EmployeeName</option>
+            }
+        </select>
+        <input type="submit" value="Create" class="btn btn-default" />
+    </form>
+</div>

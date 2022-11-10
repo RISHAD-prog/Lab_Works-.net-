@@ -1,0 +1,59 @@
+﻿
+
+@{
+    ViewBag.Title = "Order";
+}
+
+<h2>Order</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            RestaurantName
+        </th>
+        <th>
+           PreservationTime
+        </th>
+        <th>
+            Location
+        </th>
+        <th>
+            RestaurantId
+        </th>
+        <th></th>
+    </tr>
+ 
+    @foreach (var item in ViewBag.collections)
+    {
+        <tr>
+            <td>
+                @item.RestaurantName
+            </td>
+            <td>
+                @item.PreservationTime
+            </td>
+            <td>
+                @item.Location
+            </td>
+            <td>
+                @item.RestaurantId
+            </td>
+            <td>
+                <form action="/Employee/Order" method="post">
+                    @foreach (var employee in Model)
+                    {
+
+                        <input type="hidden" name="Id" value="@employee.Id" />
+                        <input type="hidden" name="EmployeeName" value="@employee.EmployeeName" />                       
+                    }
+                <input type="submit" name="submit" value="Take Order" class="btn btn-success" />
+                </form>
+                </td>
+        </tr>
+    }
+
+</table>
+
