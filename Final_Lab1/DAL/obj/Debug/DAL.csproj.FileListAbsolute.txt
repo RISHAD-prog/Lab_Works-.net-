@@ -1,0 +1,10 @@
+C:\Users\risha\source\repos\Final_Lab1\DAL\bin\Debug\DAL.dll.config
+C:\Users\risha\source\repos\Final_Lab1\DAL\bin\Debug\DAL.dll
+C:\Users\risha\source\repos\Final_Lab1\DAL\bin\Debug\DAL.pdb
+C:\Users\risha\source\repos\Final_Lab1\DAL\bin\Debug\EntityFramework.dll
+C:\Users\risha\source\repos\Final_Lab1\DAL\bin\Debug\EntityFramework.xml
+C:\Users\risha\source\repos\Final_Lab1\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\risha\source\repos\Final_Lab1\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\risha\source\repos\Final_Lab1\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\risha\source\repos\Final_Lab1\DAL\obj\Debug\DAL.dll
+C:\Users\risha\source\repos\Final_Lab1\DAL\obj\Debug\DAL.pdb
